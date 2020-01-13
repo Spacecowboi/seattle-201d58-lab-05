@@ -84,10 +84,10 @@ function sumArray(sumArr) { //eslint-disable-line
   var c = testArray[2];
   var funArray = sum(a,b)[0];
   var funArray2 = sum(funArray,c)[0];
-  // console.log(funArray);
-  // console.log(funArray2);
+  //console.log(funArray);
+  //console.log(funArray2);
 
-  return [funArray2, a + ',' + b + ',' + c + ' was passed in as an array of numbers ' + ' and ' + funArray2 + ' is their sum ' + '.'];
+  return [funArray2, a + ',' + b + ',' + c + ' was passed in as an array of numbers ' + ' and ' + funArray2 + ' is their sum' + '.'];
 
 }
 
