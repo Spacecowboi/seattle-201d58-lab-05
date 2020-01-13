@@ -78,12 +78,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
-function sumArray(sumArr) { //eslint-disable-line
+function SumArray(sumArr) { //eslint-disable-line
   var a = testArray[0];
   var b = testArray[1];
   var c = testArray[2];
-  var funArray = sum(a,b)[0];
-  var funArray2 = sum(funArray,c)[0];
+  var funArray = (sum(a,b))[0];
+  var funArray2 = (sum(funArray,c))[0];
   //console.log(funArray);
   //console.log(funArray2);
 
@@ -109,11 +109,21 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  var testArray = [2, 3, 4];
+  var a = testArray[0];
+  var b = testArray[1];
+  var c = testArray[2];
+  var xArray = (multiply(a,b))[0];
+  var xxArray = (multiply(xArray,c))[0];
+  // console.log(xArray);
+  // console.log(xxArray);
+  // console.log('this is a test');
 
+  return [xxArray, 'The numbers ' + a + ',' + b + ',' + c + ' have a product of 24' + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
