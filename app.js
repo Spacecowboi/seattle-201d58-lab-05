@@ -76,27 +76,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-// var testArray = [2, 3, 4]; //eslint-disable-line
+var testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) { //eslint-disable-line
-//   var a = testArray[0];
-//   var b = testArray[1];
-//   var c = testArray[2];
-//   var funArray = sum(a,b)[0];
-//   var funArray2 = sum(funArray,c)[0];
-//   console.log(funArray2);
+function sumArray(sumArr) { //eslint-disable-line
+  var a = testArray[0];
+  var b = testArray[1];
+  var c = testArray[2];
+  var funArray = sum(a,b)[0];
+  var funArray2 = sum(funArray,c)[0];
+  // console.log(funArray);
+  // console.log(funArray2);
 
-//   return [funArray2, a + ',' + b + ',' + c + ' was passed in array of numbers ' + ' and ' + funArray2 + ' is their sum ' + '.'];
+  return [funArray2, a + ',' + b + ',' + c + ' was passed in as an array of numbers ' + ' and ' + funArray2 + ' is their sum ' + '.'];
 
-// }
-var testArray = [2, 3, 4];
-function sumArray(sumArr) {
-  var a = sum(sumArr[0],sumArr[1])[0];
-  //console.log(a);
-  var totalsum = sum(a,sumArr[2])[0];
-  //console.log(totalsum);
-
-  return [totalsum, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed as an array of numbers, and ' + totalsum + ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
